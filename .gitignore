@@ -1,3 +1,6 @@
 npm-debug.log
 .idea/
 ZipData/node_modules
+ZipData/data/.~lock.cbsa_to_msa.csv#
+ZipData/data/.~lock.zip_to_cbsa.csv#
+package-lock.json
