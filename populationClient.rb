@@ -2,10 +2,9 @@
 require 'net/http'
 require 'json'
 
-#url = 'https://api.spotify.com/v1/search?type=artist&q=tycho'
-#url = 'https://jsonplaceholder.typicode.com/posts/1'
 zipCodeArr = Array.new
-# zipCode = ['79311','32003']
+apiHost = 'https://neon-semiotics-204505.appspot.com/'
+methodName = 'getPopData'
 puts 'Enter Zip Code:'
 result = ""
 until result == "q"
@@ -19,8 +18,7 @@ until result == "q"
   end
 end
 
-# zipCode = [zipV]
-url = 'http://localhost:3000/getPopData?zip=' + zipCodeArr.to_s
+url = apiHost + methodName + '?zip=' + zipCodeArr.to_s
 uri = URI(url)
 puts url
 response = Net::HTTP.get_response(uri)
