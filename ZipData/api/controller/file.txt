@@ -1,3 +1,0 @@
-Hello, You succefully called file.txt.
-Amit , 81 + 190 = 271
-Koi Mexc
